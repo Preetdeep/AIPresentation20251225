@@ -1,0 +1,238 @@
+Steps for experiment on Ai Tools in terms of presentation
+
+Phase 1: Document Creation
+Step 1.1: Create Simple Policy Memo
+Prompt for any AI:
+Write a 500-word policy memo on "Digital Public Infrastructure for Employment Matching in India". Include: one clear policy recommendation, three supporting arguments with specific examples, one data table showing employment platform adoption rates across 5 states. Use formal government memo structure.
+Deliverable: Save as test_doc_simple.docx
+Step 1.2: Create Complex Business Report
+Prompt for any AI:
+Write a 2000-word quarterly business review for a job-matching platform operating in India. Include sections: Executive Summary, Market Analysis (competitor landscape, user growth trends), Financial Performance (revenue, costs, projections), Strategic Initiatives (3 ongoing projects), Risks and Opportunities. Embed sample data points in text that could become charts: monthly active users trend, revenue breakdown by segment, market share comparison.
+Deliverable: Save as test_doc_complex.docx
+Step 1.3: Create Brand Guidelines PDF
+Prompt for any AI:
+Create brand guidelines for a fictional company "SkillBridge India". Specify: Primary color palette (3 colors with hex codes), Secondary colors (2 colors with hex codes), Typography hierarchy (Heading font, Body font, sizes), Logo usage rules (minimum size 1 inch, clear space equal to logo height, never stretch or rotate), Slide layout preferences (title position, content margins, footer requirements).
+Deliverable: Save as Word first, then export to brand_guidelines.pdf
+Step 1.4: Create Reference Charts
+Prompt for any AI:
+Describe three charts in text format that I can later create:
+1. Bar chart showing quarterly revenue growth over 8 quarters
+2. Pie chart of user demographics by age group (5 segments)
+3. Line graph comparing platform engagement metrics month-over-month for 12 months
+
+Provide specific data points for each.
+Action after prompt: Take the data and create actual charts in Excel or Google Sheets. Export as reference_charts.pdf
+Step 1.5: Get a Logo File
+Action: Either:
+
+Create simple logo text in Canva/PowerPoint, export as logo.png
+Use any existing company logo file you have
+Generate one using: "Create a simple logo for SkillBridge India, clean geometric design, export as PNG with transparent background"
+
+Deliverable: logo.png
+
+Phase 2: File Organization Checklist
+Step 2.1: Create Project Folder
+
+Create folder: AI_Presentation_Test
+Create subfolders: Source_Files, Test_Results, Outputs
+
+Step 2.2: Verify All Files Present
+Check you have:
+
+ test_doc_simple.docx
+ test_doc_complex.docx
+ brand_guidelines.pdf
+ reference_charts.pdf
+ logo.png
+
+Place all in Source_Files folder.
+
+Phase 3: Testing Execution
+Step 3.1: Test Platform Setup
+For each platform, verify:
+
+ Account access confirmed
+ File upload capability checked
+ Presentation generation feature located
+
+Platforms to test:
+
+Google (Gemini + Slides integration)
+Microsoft Copilot (with PowerPoint)
+Claude (this interface)
+ChatGPT
+Gemini (standalone)
+
+Step 3.2: Test 1 - Simple Document Processing
+For EACH platform, execute:
+Upload Step
+
+ Navigate to platform
+ Upload test_doc_simple.docx
+ Confirm file uploaded successfully
+
+Prompt Step
+Use this exact prompt:
+Create a 5-slide presentation from this document. Include: title slide, 3 content slides covering the main arguments, 1 conclusion slide with the policy recommendation. Use professional design.
+Documentation Step
+
+ Note start time
+ Save/download generated presentation
+ Rename file: [Platform]_Test1_Simple.pptx (or relevant format)
+ Move to Outputs folder
+ Note end time
+ Screenshot any errors
+
+Evaluation Step
+Score 1-5 for:
+
+ Content accuracy (did it extract correctly?)
+ Logical flow (sensible slide progression?)
+ Design quality (professional appearance?)
+ Completeness (all 5 slides present?)
+
+Record scores in: Test_Results/Test1_Scores.txt
+Repeat for all 5 platforms before proceeding.
+
+Step 3.3: Test 2 - Format Conversion
+Pick the best-performing platform from Test 1.
+Upload Step
+
+ Use the presentation created in Test 1 from winning platform
+ Re-upload to same platform (if needed)
+
+Prompt Step A - Executive Summary
+Convert this presentation into a 1-page executive summary document. Keep key points, remove visual elements. Professional memo format.
+
+ Save output as [Platform]_Test2_Summary.docx
+ Score conversion quality (1-5)
+
+Prompt Step B - One-Pager
+Create a one-page visual brief from this presentation. Single page, key insights only, infographic style.
+
+ Save output as [Platform]_Test2_OnePager.pdf
+ Score conversion quality (1-5)
+
+Prompt Step C - Social Carousel
+Convert this into 5 social media carousel slides. Each slide: one key point, minimal text, visual hierarchy for mobile viewing.
+
+ Save output as [Platform]_Test2_Carousel (whatever format)
+ Score conversion quality (1-5)
+
+Record all scores in: Test_Results/Test2_Scores.txt
+
+Step 3.4: Test 3 - Multi-File Synthesis
+For top 2 platforms from Test 1, execute:
+Upload Step
+
+ Upload test_doc_simple.docx
+ Upload test_doc_complex.docx
+ Upload reference_charts.pdf
+ Confirm all 3 files uploaded
+
+Prompt Step
+Create a 10-slide presentation synthesizing insights from all three documents. Structure: Title slide, Executive summary (from complex doc), 3 slides on policy recommendations (from simple doc), 3 slides on business performance using the charts provided, 1 strategic alignment slide connecting policy to business, 1 conclusion. Integrate data from charts where relevant.
+Documentation Step
+
+ Save output as [Platform]_Test3_MultiFile.pptx
+ Note which files it referenced
+ Note any file it ignored
+
+Evaluation Step
+Score 1-5:
+
+ Cross-document synthesis quality
+ Chart integration accuracy
+ Information prioritization
+ Coherent narrative
+
+Record in: Test_Results/Test3_Scores.txt
+
+Step 3.5: Test 4 - Brand Compliance
+For top 2 platforms, execute:
+Upload Step
+
+ Upload test_doc_simple.docx
+ Upload brand_guidelines.pdf
+
+Prompt Step
+Create a 5-slide presentation from the policy document following the brand guidelines provided in the PDF. Apply specified colors, typography rules, and layout preferences exactly as documented.
+Documentation Step
+
+ Save as [Platform]_Test4_Branded.pptx
+ Open the file
+ Check colors against brand PDF (note hex codes used)
+ Check fonts used
+ Check layout compliance
+
+Evaluation Step
+
+ Color accuracy (exact match = 5, close = 3, wrong = 1)
+ Font substitution handling (ideal font = 5, good alternative = 3, poor = 1)
+ Layout compliance (perfect = 5, partial = 3, ignored = 1)
+
+Record in: Test_Results/Test4_Scores.txt
+
+Step 3.6: Test 5 - Logo Integration
+For platforms that failed Test 4, execute:
+Upload Step
+
+ Upload test_doc_simple.docx
+ Upload logo.png
+
+Prompt Step
+Create a 5-slide presentation from this document. Place the provided logo in the top-right corner of each slide. Logo should be 0.5 inches tall, with 0.25 inch margin from edges. Never distort the logo.
+Evaluation Step
+
+ Logo present on all slides?
+ Correct placement?
+ Correct size?
+ No distortion?
+
+Score overall logo handling (1-5).
+Record in: Test_Results/Test5_Scores.txt
+
+Phase 4: Results Compilation
+Step 4.1: Create Master Scorecard
+Create file: Test_Results/Master_Scorecard.xlsx
+Columns: Platform | Test 1 | Test 2 | Test 3 | Test 4 | Test 5 | Total | Notes
+Step 4.2: Identify Winner
+
+ Sum scores for each platform
+ Rank platforms
+ Note specific strengths per platform
+ Document any critical failures
+
+Step 4.3: Write Summary Report
+One paragraph per platform covering:
+
+Best use case
+Critical limitation
+Workaround required (if any)
+
+Save as: Test_Results/Final_Analysis.docx
+
+Execution Checklist
+Before you start:
+
+ All 5 source files created
+ Folder structure ready
+ All platform accounts accessible
+ 4-6 hours blocked for testing
+
+During execution:
+
+ Complete one full test across all platforms before moving to next test
+ Document immediately (don't rely on memory)
+ Screenshot errors
+ Save all outputs with consistent naming
+
+After completion:
+
+ All scores recorded
+ Master scorecard complete
+ Winner identified
+ Summary report written
+
+You now have a complete protocol. Start with Phase 1, create all documents first. Confirm when done and I'll clarify any step before you proceed to testing.
